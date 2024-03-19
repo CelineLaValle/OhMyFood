@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+
+
+/* Section Localisation */
+
+.localisation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-background-light;
+
+        // &__logo{
+        //     color: $color-text;
+        // }
+}
+
+/* Section Explorer */
+
+.explorer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+body {
+    background: $color-background;
+}
+
+img {
+    object-fit: cover;
+    width: 100%
+}
+
+ul li {
+    list-style-type: none;
+}

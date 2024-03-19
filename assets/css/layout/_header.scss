@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    
+        &__logo {
+            display: flex;
+            width: 150px;
+        // &:hover {
+        //     cursor: pointer;
+        // }
+        }
+}
