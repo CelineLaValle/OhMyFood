@@ -3,5 +3,23 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
 $color-text: #000000;
+$color-text-white: #FFFFFF;
+$color-text-light: #353535;
 $color-background: #F6F6F6;
 $color-background-light: #EAEAEA;
+$color-background-white: #FFFFFF;
+
+@mixin button-gradient {
+    background: rgb(147,86,220);
+    background: -moz-linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 97%);
+    background: -webkit-linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 97%);
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 97%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
+}
+@mixin button-gradient-inverted {
+    background: rgb(147,86,220);
+    background: -moz-linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 97%);
+    background: -webkit-linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 97%);
+    background: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 97%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
+}

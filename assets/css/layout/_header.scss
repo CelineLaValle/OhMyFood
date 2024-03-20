@@ -1,16 +1,16 @@
 @use "../abstracts/" as *;
+@use "../base/" as *;
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    // box-shadow: $box-shadow-m;
     padding-top: 20px;
     
         &__logo {
             display: flex;
             width: 150px;
-        // &:hover {
-        //     cursor: pointer;
-        // }
+            padding-bottom: 15px;
         }
 }
