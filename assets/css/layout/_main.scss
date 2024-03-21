@@ -38,7 +38,7 @@
             font-size: $font-size-m;
             font-family: $font-secondary;
             padding: 10px 10px 25px 10px;
-            color: $color-text-light;
+            color: $color-text-darkgrey;
         }
 
             &__button {
@@ -99,27 +99,38 @@
                 padding-bottom: 15px;
             }
 
-                &__card {
-                    border-radius: $border-radius-xl;
-                    background-color: $color-background-white;
-                    margin-bottom: 20px;
+                &__a {
+                    // max-width: 200px;
+                    // max-height: 50px;
                 }
 
-                    &__img {
-                        border-radius: $border-radius-l-top
+                    &__card {
+                        border-radius: $border-radius-xl;
+                        background-color: $color-background-white;
+                        margin-bottom: 20px;
                     }
 
-                        &__h3 {
-                            font-family: $font-secondary;
-                            padding-left: 15px;
-                            font-size: $font-size-m;
-                            padding: 10px 0 5px 10px;
+                        &__img {
+                            border-radius: $border-radius-l-top
+                            // max-width: 200px;
+                            // max-height: 50px;
                         }
 
-                            &__p {
+                            &__h3 {
                                 font-family: $font-secondary;
                                 padding-left: 15px;
-                                font-size: $font-size-sm;
-                                padding: 0 0 5px 10px;
+                                font-size: $font-size-m;
+                                padding: 10px 0 5px 10px;
                             }
+
+                                &__p {
+                                    font-family: $font-secondary;
+                                    padding-left: 15px;
+                                    font-size: $font-size-sm;
+                                    padding: 0 0 5px 10px;
+                                }
+}
+
+.fa-heart {
+    // align-items: end;
 }

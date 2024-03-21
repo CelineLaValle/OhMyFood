@@ -4,10 +4,11 @@ $color-tertiary: #99E2D0;
 
 $color-text: #000000;
 $color-text-white: #FFFFFF;
-$color-text-light: #353535;
+$color-text-darkgrey: #353535;
 $color-background: #F6F6F6;
 $color-background-light: #EAEAEA;
 $color-background-white: #FFFFFF;
+$color-background-darkgrey: #353535;
 
 @mixin button-gradient {
     background: rgb(147,86,220);
