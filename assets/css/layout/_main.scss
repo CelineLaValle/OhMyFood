@@ -10,6 +10,8 @@
     background-color: $color-background-light;
     height: 50px;
     box-shadow: $box-shadow-m;
+    z-index: 1;
+    position: relative;
 
         &__logo{
             padding-right: 10px;
@@ -111,9 +113,8 @@
                     }
 
                         &__img {
-                            border-radius: $border-radius-l-top
-                            // max-width: 200px;
-                            // max-height: 50px;
+                            border-radius: $border-radius-l-top;
+                            height: 200px;
                         }
 
                             &__h3 {
@@ -133,4 +134,10 @@
 
 .fa-heart {
     // align-items: end;
+}
+
+.info-restaurants {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
