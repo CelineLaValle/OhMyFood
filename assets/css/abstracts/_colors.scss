@@ -1,14 +1,18 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-lightgrey: #7E7E7E;
+$color-lightblack: #101010;
 
 $color-text: #000000;
 $color-text-white: #FFFFFF;
+$color-text-lightgrey: #7E7E7E;
 $color-text-darkgrey: #353535;
 $color-background: #F6F6F6;
 $color-background-light: #EAEAEA;
 $color-background-white: #FFFFFF;
 $color-background-darkgrey: #353535;
+$color-background-primary: #9356DC;
 
 @mixin button-gradient {
     background: rgb(147,86,220);

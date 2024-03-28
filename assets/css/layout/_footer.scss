@@ -10,20 +10,25 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 0 0 20px;
+    margin-top: 20px;
     background-color: $color-background-darkgrey;
     color: $color-text-white;
 
         &__logo {
             font-size: $font-size-m;
             font-family: $font-primary;
+            padding: 10px 0 20px 0;
         }
 
             &__li {
                 padding-bottom: 5px;
-                // align-items: center;
         }
 
-                &__a {
-                    // align-items: center;
+                &__icon {
+                    padding-right: 12px;
+                }
+
+                &__icon__partenaire {
+                    padding-right: 6px;
                 }
 }

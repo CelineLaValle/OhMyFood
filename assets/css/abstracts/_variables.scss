@@ -1,4 +1,4 @@
-$font-primary:  'Shrikhand', serif;
+$font-primary: 'Shrikhand', serif;
 $font-secondary: 'Roboto', sans-serif;
 
 $font-size-xxxl: 2.5rem; // 40px
@@ -10,11 +10,18 @@ $font-size-sm: 1.063rem; // 17px
 $font-size-s: 1rem; // 16px
 $font-size-xs: 0.938rem; // 15px
 
+$font-weight-xl: 700;
+$font-weight-l: 500;
+$font-weight-m: 300;
+$font-weight-s: 100;
+
 $box-shadow-xxl: 0px 4px 15px rgba(0, 0, 0, 0.35);
-$box-shadow-xl: 0px 4px 15px rgba(0, 0, 0, 0.15); 
+$box-shadow-xl: 0px 4px 15px rgba(0, 0, 0, 0.15);
 $box-shadow-l: 0px 4px 10px rgba(0, 0, 0, 0.25);
 $box-shadow-m: 0px 4px 4px rgba(0, 0, 0, 0.25);
 $box-shadow-s: 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+$box-shadow-top-bottom-m: 0px -2px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 $border-radius-xxxl: 30px;
 $border-radius-xxl: 30px;
@@ -23,3 +30,4 @@ $border-radius-l: 15px;
 $border-radius-m: 10px;
 $border-radius-s: 2px;
 $border-radius-l-top: 20px 20px 0 0;
+$border-radius-xxl-top: 30px 30px 0 0;

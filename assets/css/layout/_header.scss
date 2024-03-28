@@ -1,16 +1,28 @@
-@use "../abstracts/" as *;
-@use "../base/" as *;
+@use '../abstracts/' as *;
+@use '../base/' as *;
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // box-shadow: $box-shadow-m;
-    padding-top: 20px;
-    
-        &__logo {
-            display: flex;
-            width: 150px;
-            padding-bottom: 15px;
-        }
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 20px;
+   width: 100%;
+
+   &__menu {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__arrow {
+      cursor: pointer;
+      position: absolute;
+      left: 20px;
+      font-size: $font-size-m;
+   }
+
+   &__logo {
+      display: flex;
+      width: 150px;
+      padding-bottom: 15px;
+   }
 }
