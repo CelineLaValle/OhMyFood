@@ -126,7 +126,7 @@
 @media (min-width: 1024px) {
    .fonctionnement {
       display: flex;
-      margin-left: 20%;
+      margin-left: 250px;
       margin-bottom: 30px;
 
       &__h2 {
@@ -143,9 +143,9 @@
          width: 65%;
       }
 
-      // &__liste__li__number {
-      //    padding: 10px 10px 10px 10px;
-      // }
+      &__liste__li__number {
+         left: 260px;
+      }
    }
 }
 
@@ -243,7 +243,40 @@
 @media (min-width: 1024px) {
    .restaurants {
       display: flex;
-      justify-content: space-between;
-      flex-direction: row;
+
+      &__section {
+         width: 100%;
+         padding: 50px 0;
+      }
+
+      &__h2 {
+         margin-left: 250px;
+      }
+
+      &__box {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         margin: 0 250px 0 250px;
+      }
+
+      &__card {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 490px;
+         height: 251px;
+         margin-bottom: 50px;
+      }
    }
+}
+
+.new-palette {
+   right: 860px;
+   bottom: 95px;
+}
+
+.new-enchantee {
+   right: 290px;
+   bottom: 95px;
 }
