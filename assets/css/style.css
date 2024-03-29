@@ -66,7 +66,7 @@ li {
   padding: 0 0 0 20px;
   margin-top: 20px;
   background-color: #353535;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer__logo {
   font-size: 1.125rem;
@@ -83,12 +83,18 @@ li {
   padding-right: 6px;
 }
 
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 /* Section Localisation */
 .localisation {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   height: 50px;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 1;
@@ -106,7 +112,7 @@ li {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-bottom: 30px;
 }
 .explorer__h1 {
@@ -132,11 +138,17 @@ li {
   background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
 }
 
+@media (min-width: 1024px) {
+  .explorer__h1 {
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+  }
+}
 /* Section Fonctionnement */
 .fonctionnement {
   display: flex;
@@ -153,7 +165,7 @@ li {
   width: 90%;
   height: 80px;
   font-weight: 500;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   font-size: 1rem;
@@ -164,8 +176,8 @@ li {
   gap: 15px;
 }
 .fonctionnement__liste__li__number {
-  color: #FFFFFF;
-  background-color: #9356DC;
+  color: #ffffff;
+  background-color: #9356dc;
   border-radius: 50%;
   font-size: 0.938rem;
   width: 25px;
@@ -177,14 +189,24 @@ li {
   left: 10px;
 }
 .fonctionnement__liste__li__greylogo {
-  color: #7E7E7E;
+  color: #7e7e7e;
 }
 .fonctionnement__liste__li__purplelogo {
-  color: #9356DC;
+  color: #9356dc;
 }
 
+@media (min-width: 1024px) {
+  .fonctionnement {
+    display: flex;
+    width: 100%;
+  }
+  .fonctionnement__liste {
+    display: flex;
+  }
+}
+/* Section Restaurants */
 .restaurants {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   width: 100%;
 }
 .restaurants__section {
@@ -197,7 +219,7 @@ li {
 }
 .restaurants__card {
   border-radius: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-bottom: 20px;
 }
 .restaurants__img {
@@ -218,6 +240,36 @@ li {
   font-weight: 300;
 }
 
+.new-palette {
+  background-color: #99e2d0;
+  color: #008766;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  position: absolute;
+  right: 30px;
+  bottom: 35px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.new-enchantee {
+  background-color: #99e2d0;
+  color: #008766;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  position: absolute;
+  right: 30px;
+  bottom: -250px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
 .logo-heart {
   padding-right: 15px;
   font-size: 1.5rem;
@@ -234,13 +286,20 @@ li {
   align-items: center;
 }
 
+@media (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
 .img {
   width: 100%;
   height: 275px;
 }
 
 .main {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .palette {
@@ -248,7 +307,7 @@ li {
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   position: relative;
   margin-top: -40px;
 }
@@ -274,7 +333,7 @@ li {
   width: 40px;
   height: 3px;
   margin: 5px 0 0 20px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 .menu__cards {
   display: flex;
@@ -282,7 +341,7 @@ li {
   align-items: center;
 }
 .menu__cards__plat {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
