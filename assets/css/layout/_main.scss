@@ -76,6 +76,7 @@
 
    &__h2 {
       font-family: $font-secondary;
+      font-weight: $font-weight-xl;
       padding-left: 20px;
    }
 
@@ -88,7 +89,7 @@
          height: 80px;
          font-weight: $font-weight-l;
          background-color: $color-background;
-         box-shadow: $box-shadow-s;
+         box-shadow: $box-shadow-xl;
          border-radius: $border-radius-xl;
          font-size: $font-size-s;
          margin: 15px 10px 15px 20px;
@@ -125,11 +126,26 @@
 @media (min-width: 1024px) {
    .fonctionnement {
       display: flex;
-      width: 100%;
+      margin-left: 20%;
+      margin-bottom: 30px;
 
-      &__liste {
-         display: flex;
+      &__h2 {
+         padding-bottom: 10px;
       }
+
+      &__liste__li {
+         gap: 25px;
+         height: 72px;
+      }
+
+      &__liste__ul {
+         display: flex;
+         width: 65%;
+      }
+
+      // &__liste__li__number {
+      //    padding: 10px 10px 10px 10px;
+      // }
    }
 }
 
