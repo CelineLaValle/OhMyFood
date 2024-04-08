@@ -158,7 +158,7 @@ li {
   justify-content: center;
   flex-direction: column;
   background-color: #f6f6f6;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .explorer__h1 {
   text-align: center;
@@ -186,6 +186,11 @@ li {
   color: #ffffff;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.explorer__h1__p__button:hover {
+  opacity: 0.85;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 @media (min-width: 992px) {
@@ -331,6 +336,11 @@ li {
   color: #101010;
   width: 50%;
 }
+.fa-heart:active {
+  background: rgb(147, 86, 220);
+  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
+}
 
 .info-restaurants {
   display: flex;
@@ -410,9 +420,6 @@ li {
 }
 
 @media (min-width: 1440px) {
-  .main {
-    margin: 0 200px 0 200px;
-  }
   .img {
     margin: none;
   }
@@ -464,4 +471,8 @@ li {
   align-items: center;
   justify-content: center;
   margin: 40px 0 40px 0;
+}
+.menu-button__button:hover {
+  opacity: 0.85;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }/*# sourceMappingURL=style.css.map */

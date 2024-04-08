@@ -40,7 +40,7 @@
    justify-content: center;
    flex-direction: column;
    background-color: $color-background;
-   padding-bottom: 30px;
+   padding-bottom: 50px;
 
    &__h1 {
       text-align: center;
@@ -66,6 +66,12 @@
             color: $color-text-white;
             font-size: $font-size-s;
             font-family: $font-secondary;
+            box-shadow: $box-shadow-l;
+
+            &:hover {
+               opacity: 0.85;
+               box-shadow: $box-shadow-xxl;
+            }
          }
       }
    }
@@ -239,6 +245,10 @@
 .fa-heart {
    color: $color-lightblack;
    width: 50%;
+
+   &:active {
+      @include button-gradient-inverted;
+   }
 }
 
 .info-restaurants {
