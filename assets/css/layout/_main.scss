@@ -20,6 +20,18 @@
    }
 }
 
+@media (min-width: 992px) {
+   .localisation {
+      box-shadow: none;
+   }
+}
+
+@media (min-width: 1440px) {
+   .localisation {
+      box-shadow: none;
+   }
+}
+
 /* Section Explorer */
 
 .explorer {
@@ -35,31 +47,31 @@
       font-size: $font-size-l;
       font-family: $font-secondary;
       padding: 30px 10px 0 10px;
-   }
 
-   &__p {
-      text-align: center;
-      font-size: $font-size-m;
-      font-family: $font-secondary;
-      padding: 10px 10px 25px 10px;
-      color: $color-text-darkgrey;
-      font-weight: $font-weight-m;
-   }
+      &__p {
+         text-align: center;
+         font-size: $font-size-m;
+         font-family: $font-secondary;
+         padding: 10px 10px 25px 10px;
+         color: $color-text-darkgrey;
+         font-weight: $font-weight-m;
 
-   &__button {
-      border: none;
-      width: 218px;
-      height: 50px;
-      cursor: pointer;
-      border-radius: $border-radius-xxl;
-      @include button-gradient;
-      color: $color-text-white;
-      font-size: $font-size-s;
-      font-family: $font-secondary;
+         &__button {
+            border: none;
+            width: 218px;
+            height: 50px;
+            cursor: pointer;
+            border-radius: $border-radius-xxl;
+            @include button-gradient;
+            color: $color-text-white;
+            font-size: $font-size-s;
+            font-family: $font-secondary;
+         }
+      }
    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
    .explorer__h1 {
       padding-bottom: 10px;
       font-size: $font-size-xxxl;
@@ -71,81 +83,93 @@
 .fonctionnement {
    display: flex;
    flex-direction: column;
-   padding-top: 30px;
+   padding-top: 40px;
    width: 100%;
 
    &__h2 {
       font-family: $font-secondary;
       font-weight: $font-weight-xl;
       padding-left: 20px;
-   }
 
-   &__liste {
-      // align-items: center;
+      &__liste {
+         &__ul {
+            padding-bottom: 50px;
 
-      &__li {
-         display: flex;
-         width: 90%;
-         height: 80px;
-         font-weight: $font-weight-l;
-         background-color: $color-background;
-         box-shadow: $box-shadow-xl;
-         border-radius: $border-radius-xl;
-         font-size: $font-size-s;
-         margin: 15px 10px 15px 20px;
-         text-align: center;
-         align-items: center;
-         padding-left: 40px;
-         gap: 15px;
-      }
+            &__li {
+               display: flex;
+               width: 90%;
+               height: 72px;
+               font-weight: $font-weight-l;
+               background-color: $color-background;
+               box-shadow: $box-shadow-xl;
+               border-radius: $border-radius-xl;
+               font-size: $font-size-s;
+               margin: 15px 10px 25px 20px;
+               text-align: center;
+               align-items: center;
+               padding-left: 40px;
+               gap: 25px;
+               position: relative;
 
-      &__li__number {
-         color: $color-text-white;
-         background-color: $color-background-primary;
-         border-radius: 50%;
-         font-size: $font-size-xs;
-         width: 25px;
-         height: 25px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         position: absolute;
-         left: 10px;
-      }
-
-      &__li__greylogo {
-         color: $color-lightgrey;
-      }
-
-      &__li__purplelogo {
-         color: $color-primary;
+               &__number {
+                  color: $color-text-white;
+                  background-color: $color-background-primary;
+                  border-radius: 50%;
+                  font-size: $font-size-xs;
+                  width: 25px;
+                  height: 25px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: absolute;
+                  left: -12.5px;
+               }
+            }
+         }
       }
    }
 }
 
-@media (min-width: 1024px) {
+.greylogo {
+   color: $color-lightgrey;
+}
+
+.purplelogo {
+   color: $color-primary;
+}
+
+@media (min-width: 768px) {
    .fonctionnement {
-      display: flex;
-      margin-left: 250px;
-      margin-bottom: 30px;
+      padding: 30px 30px 30px 30px;
 
       &__h2 {
          padding-bottom: 10px;
-      }
 
-      &__liste__li {
-         gap: 25px;
-         height: 72px;
-      }
+         &__liste {
+            &__ul {
+               display: flex;
+               width: 100%;
 
-      &__liste__ul {
-         display: flex;
-         width: 65%;
+               &__li {
+                  text-align: start;
+                  padding-left: 30px;
+               }
+            }
+         }
       }
+   }
+}
 
-      &__liste__li__number {
-         left: 260px;
-      }
+@media (min-width: 992px) {
+   .fonctionnement {
+      display: flex;
+      padding: 30px 30px 30px 30px;
+   }
+}
+
+@media (min-width: 1440px) {
+   .fonctionnement {
+      padding: 30px 160px 0 160px;
    }
 }
 
@@ -154,79 +178,62 @@
 .restaurants {
    background-color: $color-background;
    width: 100%;
-
-   &__section {
-      margin: 0 20px 0 20px;
-      padding: 40px 0 20px 0;
-   }
+   padding: 50px 30px 50px 30px;
 
    &__h2 {
       font-family: $font-secondary;
       padding-bottom: 15px;
-   }
 
-   &__card {
-      border-radius: $border-radius-xl;
-      background-color: $color-background-white;
-      margin-bottom: 20px;
-   }
+      &__box {
+         &__a {
+            &__card {
+               border-radius: $border-radius-xl;
+               background-color: $color-background-white;
+               margin-bottom: 20px;
+               position: relative;
 
-   &__img {
-      border-radius: $border-radius-l-top;
-      height: 200px;
-      // position: relative;
-   }
+               &__img {
+                  border-radius: $border-radius-l-top;
+                  height: 200px;
 
-   &__h3 {
-      font-family: $font-secondary;
-      padding-left: 15px;
-      font-size: $font-size-m;
-      padding: 10px 0 0 10px;
-   }
+                  &__h3 {
+                     font-family: $font-secondary;
+                     padding-left: 15px;
+                     font-size: $font-size-m;
+                     padding: 10px 0 0 10px;
 
-   &__p {
-      font-family: $font-secondary;
-      padding-left: 15px;
-      font-size: $font-size-sm;
-      padding: 0 0 10px 10px;
-      font-weight: $font-weight-m;
+                     &__p {
+                        font-family: $font-secondary;
+                        padding-left: 15px;
+                        font-size: $font-size-sm;
+                        padding: 0 0 10px 10px;
+                        font-weight: $font-weight-m;
+                     }
+                  }
+               }
+            }
+         }
+      }
    }
 }
 
-.new-palette {
+.new {
+   position: absolute;
    background-color: $color-tertiary;
    color: $color-text-green;
-   width: 80px;
-   height: 29px;
+   padding: 5px 10px 5px 10px;
    border-radius: $border-radius-s;
-   position: absolute;
-   right: 30px;
-   bottom: 35px;
-   text-align: center;
-   padding: 5px;
-   font-family: $font-secondary;
    font-size: $font-size-s;
-}
-
-.new-enchantee {
-   background-color: $color-tertiary;
-   color: $color-text-green;
-   width: 80px;
-   height: 29px;
-   border-radius: $border-radius-s;
-   position: absolute;
-   right: 30px;
-   bottom: -250px;
-   text-align: center;
-   padding: 5px;
    font-family: $font-secondary;
-   font-size: $font-size-s;
+   text-align: center;
+   top: 0;
+   right: 0;
+   margin: 15px 15px 0 0;
 }
 
 .logo-heart {
    padding-right: 15px;
    font-size: $font-size-l;
-   // font-weight: $font-weight-s;
 }
 
 .fa-heart {
@@ -240,43 +247,60 @@
    align-items: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
    .restaurants {
-      display: flex;
-
-      &__section {
-         width: 100%;
-         padding: 50px 0;
-      }
+      width: 100%;
+      padding: 30px 30px 30px 30px;
 
       &__h2 {
-         margin-left: 250px;
-      }
+         &__box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 50px;
 
-      &__box {
-         display: flex;
-         justify-content: space-between;
-         flex-wrap: wrap;
-         margin: 0 250px 0 250px;
-      }
+            &__a {
+               display: block;
+               width: calc(50% - 50px);
 
-      &__card {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         width: 490px;
-         height: 251px;
-         margin-bottom: 50px;
+               &__card {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  height: 251px;
+                  padding-bottom: 10px;
+               }
+            }
+         }
       }
    }
 }
 
-.new-palette {
-   right: 860px;
-   bottom: 95px;
+@media (min-width: 992px) {
+   .restaurants {
+      &__h2 {
+         padding-left: 30px;
+         &__box {
+            padding: 30px 30px 30px 30px;
+         }
+      }
+   }
 }
 
-.new-enchantee {
-   right: 290px;
-   bottom: 95px;
+@media (min-width: 1440px) {
+   .restaurants {
+      &__h2 {
+         padding: 0 0 20px 150px;
+
+         &__box {
+            padding: 0 150px 0 150px;
+
+            &__a {
+               &__card {
+                  margin-bottom: 0;
+               }
+            }
+         }
+      }
+   }
 }

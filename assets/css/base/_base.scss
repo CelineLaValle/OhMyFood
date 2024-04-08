@@ -1,11 +1,14 @@
-@use "../abstracts/" as *;
-
+@use '../abstracts/' as *;
 
 img {
-    object-fit: cover;
-    width: 100%
+   object-fit: cover;
+   width: 100%;
 }
 
 ul li {
-    list-style-type: none;
+   list-style-type: none;
+}
+
+body {
+   font-family: $font-secondary;
 }
