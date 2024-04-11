@@ -11,18 +11,18 @@
    &__menu {
       display: flex;
       justify-content: space-between;
-   }
 
-   &__arrow {
-      cursor: pointer;
-      position: absolute;
-      left: 20px;
-      font-size: $font-size-m;
+      &__arrow {
+         cursor: pointer;
+         position: absolute;
+         left: 20px;
+         font-size: $font-size-m;
+      }
    }
+}
 
-   &__logo {
-      display: flex;
-      width: 150px;
-      padding-bottom: 15px;
-   }
+.logo {
+   display: flex;
+   width: 150px;
+   padding-bottom: 15px;
 }

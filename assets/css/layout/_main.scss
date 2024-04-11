@@ -238,16 +238,30 @@
 }
 
 .logo-heart {
-   padding-right: 15px;
+   position: relative;
+   padding-right: 30px;
    font-size: $font-size-l;
-}
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
-.fa-heart {
-   color: $color-lightblack;
-   width: 50%;
+   &__premier {
+      position: absolute;
+      color: $color-lightblack;
+   }
 
-   &:active {
+   &__second {
+      position: absolute;
+      // color: $color-lightblack;
+      opacity: 0;
       @include button-gradient-inverted;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      &:hover {
+         opacity: 1;
+      }
    }
 }
 
