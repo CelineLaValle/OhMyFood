@@ -175,7 +175,7 @@
 
 @media (min-width: 1440px) {
    .fonctionnement {
-      padding: 30px 160px 0 160px;
+      padding: 50px 160px 0 160px;
    }
 }
 
@@ -252,7 +252,6 @@
 
    &__second {
       position: absolute;
-      // color: $color-lightblack;
       opacity: 0;
       @include button-gradient-inverted;
       background-clip: text;

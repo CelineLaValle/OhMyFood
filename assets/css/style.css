@@ -277,7 +277,7 @@ li {
 }
 @media (min-width: 1440px) {
   .fonctionnement {
-    padding: 30px 160px 0 160px;
+    padding: 50px 160px 0 160px;
   }
 }
 /* Section Restaurants */
@@ -452,10 +452,19 @@ li {
   opacity: 1;
 }
 
-@media (min-width: 1440px) {
-  .img {
-    margin: none;
+@media (min-width: 768px) {
+  .background-menu {
+    width: 555px;
+    padding: 0 70px 0 70px;
   }
+}
+@media (min-width: 992px) {
+  .background-menu {
+    width: 755px;
+    padding: 0 70px 0 70px;
+  }
+}
+@media (min-width: 1440px) {
   .background-menu {
     width: 1055px;
     padding: 0 70px 0 70px;
