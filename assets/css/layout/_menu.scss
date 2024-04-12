@@ -111,7 +111,7 @@
                display: flex;
                align-items: center;
                flex-grow: 1;
-               opacity: 0; // Assurez-vous que les cartes sont initialement cachées
+               opacity: 0;
                animation: slide $anim-dur ease forwards;
                @for $i from 1 through $max-cards {
                   .card:nth-child(#{$i}) {
