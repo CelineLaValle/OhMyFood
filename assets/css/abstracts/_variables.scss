@@ -33,3 +33,37 @@ $border-radius-s: 2px;
 $border-radius-l-top: 20px 20px 0 0;
 $border-radius-l-right: 0 15px 15px 0;
 $border-radius-xxl-top: 30px 30px 0 0;
+
+// $delay: 0.5s; // Définir le délai entre chaque élément
+
+// @keyframes slideInFromRight {
+//    from {
+//       opacity: 0;
+//       transform: translateX(100%);
+//    }
+//    to {
+//       opacity: 1;
+//       transform: translateX(0%);
+//    }
+// }
+
+// @mixin animate-delay($index) {
+//    animation: slideInFromRight 0.8s ease forwards;
+//    animation-delay: $index / $delay;
+// }
+
+$anim-dur: 1000ms; // Durée totale de l'animation
+$anim-delay: 200ms; // Délai initial
+$max-cards: 10;
+$anim-delay: $anim-dur / $max-cards;
+
+@keyframes slide {
+   from {
+      opacity: 0;
+      transform: translateX(100%);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0%);
+   }
+}

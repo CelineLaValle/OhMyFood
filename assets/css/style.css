@@ -1,3 +1,13 @@
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -181,9 +191,7 @@ li {
   height: 50px;
   cursor: pointer;
   border-radius: 30px;
-  background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
   color: #ffffff;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -343,9 +351,7 @@ li {
 .logo-heart__second {
   position: absolute;
   opacity: 0;
-  background: rgb(147, 86, 220);
   background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -441,9 +447,7 @@ li {
 .titre-menu__h1__heart__second {
   position: absolute;
   opacity: 0;
-  background: rgb(147, 86, 220);
   background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -503,7 +507,49 @@ li {
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-grow: 1;
+  opacity: 0;
+  animation: slide 1000ms ease forwards;
+}
+.menu__h2__trait__cards__plat .card:nth-child(1) {
+  animation: slide 1000ms ease forwards;
+  animation-delay: 100ms;
+}
+.menu__h2__trait__cards__plat .card:nth-child(2) {
+  animation: slide 1000ms ease forwards;
+  animation-delay: 200ms;
+}
+.menu__h2__trait__cards__plat .card:nth-child(3) {
+  animation: slide 1000ms ease forwards;
+  animation-delay: 300ms;
+}
+.menu__h2__trait__cards__plat .card:nth-child(4) {
+  animation: slide 1000ms ease forwards;
+  animation-delay: 400ms;
+}
+.menu__h2__trait__cards__plat .card:nth-child(5) {
+  animation: slide 1000ms ease forwards;
+  animation-delay: 500ms;
+}
+.menu__h2__trait__cards__plat .card:nth-child(6) {
+  animation: slide 1000ms ease forwards;
+  animation-delay: 600ms;
+}
+.menu__h2__trait__cards__plat .card:nth-child(7) {
+  animation: slide 1000ms ease forwards;
+  animation-delay: 700ms;
+}
+.menu__h2__trait__cards__plat .card:nth-child(8) {
+  animation: slide 1000ms ease forwards;
+  animation-delay: 800ms;
+}
+.menu__h2__trait__cards__plat .card:nth-child(9) {
+  animation: slide 1000ms ease forwards;
+  animation-delay: 900ms;
+}
+.menu__h2__trait__cards__plat .card:nth-child(10) {
+  animation: slide 1000ms ease forwards;
+  animation-delay: 1000ms;
 }
 .menu__h2__trait__cards__plat:hover .checkbox {
   width: 20%;
