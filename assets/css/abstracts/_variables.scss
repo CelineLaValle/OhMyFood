@@ -34,8 +34,8 @@ $border-radius-l-top: 20px 20px 0 0;
 $border-radius-l-right: 0 15px 15px 0;
 $border-radius-xxl-top: 30px 30px 0 0;
 
-$anim-dur: 1000ms; // Durée totale de l'animation
-$anim-delay: 200ms; // Délai initial
+$anim-dur: 2000ms; // Durée totale de l'animation
+$anim-delay: 500ms; // Délai initial
 $max-cards: 10;
 $anim-delay: $anim-dur / $max-cards;
 

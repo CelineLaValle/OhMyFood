@@ -110,21 +110,20 @@
                height: 70px;
                display: flex;
                align-items: center;
-               flex-grow: 1;
                opacity: 0;
                animation: slide $anim-dur ease forwards;
                @for $i from 1 through $max-cards {
-                  .card:nth-child(#{$i}) {
+                  &:nth-child(#{$i}) {
                      animation: slide $anim-dur ease forwards;
                      animation-delay: $anim-delay * $i;
                   }
                }
 
-               &:hover {
-                  .checkbox {
-                     width: 20%;
-                     height: 70px;
-                  }
+               &__choix {
+                  flex-grow: 1;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
                }
 
                &__prix {
@@ -132,27 +131,34 @@
                   padding-right: 15px;
                   font-weight: $font-weight-xl;
                   align-items: end;
-                  width: 40px;
+                  justify-content: end;
+                  width: 60px;
                   height: 100%;
+               }
+
+               .checkbox {
+                  background-color: $color-tertiary;
+                  color: $color-text-white;
+                  font-size: $font-size-m;
+                  border-radius: $border-radius-l-right;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  transition: width 400ms ease-in-out;
+                  width: 0%;
+                  height: 70px;
+                  overflow: hidden;
+               }
+
+               &:hover {
+                  .checkbox {
+                     width: 20%;
+                  }
                }
             }
          }
       }
    }
-}
-
-.checkbox {
-   background-color: $color-tertiary;
-   color: $color-text-white;
-   font-size: $font-size-m;
-   border-radius: $border-radius-l-right;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   transition: all 400ms ease-in-out;
-   width: 0%;
-   height: 70px;
-   overflow: hidden;
 }
 
 .menu-button {
