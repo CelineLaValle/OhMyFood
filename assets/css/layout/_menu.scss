@@ -121,9 +121,14 @@
 
                &__choix {
                   flex-grow: 1;
+                  width: 10%;
                   overflow: hidden;
                   white-space: nowrap;
-                  text-overflow: ellipsis;
+
+                  &__suspension {
+                     overflow: hidden;
+                     text-overflow: ellipsis;
+                  }
                }
 
                &__prix {

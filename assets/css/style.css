@@ -51,7 +51,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px 0 10px 0;
   width: 100%;
 }
 .header__menu {
@@ -191,7 +191,7 @@ li {
   height: 50px;
   cursor: pointer;
   border-radius: 30px;
-  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 97%);
   color: #ffffff;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -351,7 +351,7 @@ li {
 .logo-heart__second {
   position: absolute;
   opacity: 0;
-  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
+  background: linear-gradient(180deg, #9356dc 0%, #ff79da 97%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -447,7 +447,7 @@ li {
 .titre-menu__h1__heart__second {
   position: absolute;
   opacity: 0;
-  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
+  background: linear-gradient(180deg, #9356dc 0%, #ff79da 97%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -552,8 +552,12 @@ li {
 }
 .menu__h2__trait__cards__plat__choix {
   flex-grow: 1;
+  width: 10%;
   overflow: hidden;
   white-space: nowrap;
+}
+.menu__h2__trait__cards__plat__choix__suspension {
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu__h2__trait__cards__plat__prix {
@@ -592,4 +596,75 @@ li {
 .menu-button__button:hover {
   opacity: 0.85;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+.intro {
+  background: linear-gradient(0deg, #99e2d0 0%, #ff79da 97%);
+  width: 100%;
+  height: 100%;
+  animation: loader 3000ms linear forwards 1;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  40% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  60% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  80% {
+    transform: scaleY(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}
+.loader {
+  color: #ffffff;
+  font-family: "Shrikhand", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  animation: loader 3000ms linear forwards 1;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleY(1.2);
+  }
+  40% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  60% {
+    opacity: 1;
+    transform: scaleY(1.2);
+  }
+  80% {
+    transform: scaleY(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -16,8 +16,12 @@ $color-background-darkgrey: #353535;
 $color-background-primary: #9356dc;
 
 @mixin button-gradient {
-   background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 97%);
+   background: linear-gradient(0deg, #9356dc 0%, #ff79da 97%);
 }
 @mixin button-gradient-inverted {
-   background: linear-gradient(180deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 97%);
+   background: linear-gradient(180deg, #9356dc 0%, #ff79da 97%);
+}
+
+@mixin loader-gradient {
+   background: linear-gradient(0deg, #99e2d0 0%, #ff79da 97%);
 }
