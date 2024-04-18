@@ -45,10 +45,22 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            transition: all 400ms ease-in-out;
 
             &:hover {
                opacity: 1;
+               transform: scale(1.1);
             }
+         }
+      }
+   }
+}
+
+@media (min-width: 320px) {
+   .titre-menu {
+      &__h1 {
+         &__heart {
+            padding-left: 20px;
          }
       }
    }
@@ -81,6 +93,7 @@
 }
 
 .menu {
+   overflow: hidden;
    &__h2 {
       font-size: $font-size-s;
       font-family: $font-secondary;
@@ -95,8 +108,15 @@
          background-color: $color-tertiary;
 
          &__cards {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
 
             &__plat {
@@ -108,18 +128,27 @@
                padding: 10px 0 10px 15px;
                width: 100%;
                height: 70px;
+               display: -webkit-box;
+               display: -ms-flexbox;
                display: flex;
+               -webkit-box-align: center;
+               -ms-flex-align: center;
                align-items: center;
                opacity: 0;
+               -webkit-animation: slide $anim-dur ease forwards;
                animation: slide $anim-dur ease forwards;
                @for $i from 1 through $max-cards {
                   &:nth-child(#{$i}) {
+                     -webkit-animation: slide $anim-dur ease forwards;
                      animation: slide $anim-dur ease forwards;
+                     -webkit-animation-delay: $anim-delay * $i;
                      animation-delay: $anim-delay * $i;
                   }
                }
 
                &__choix {
+                  -webkit-box-flex: 1;
+                  -ms-flex-positive: 1;
                   flex-grow: 1;
                   width: 10%;
                   overflow: hidden;
@@ -127,15 +156,22 @@
 
                   &__suspension {
                      overflow: hidden;
+                     -o-text-overflow: ellipsis;
                      text-overflow: ellipsis;
                   }
                }
 
                &__prix {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
                   display: flex;
                   padding-right: 15px;
                   font-weight: $font-weight-xl;
+                  -webkit-box-align: end;
+                  -ms-flex-align: end;
                   align-items: end;
+                  -webkit-box-pack: end;
+                  -ms-flex-pack: end;
                   justify-content: end;
                   width: 60px;
                   height: 100%;
@@ -146,9 +182,17 @@
                   color: $color-text-white;
                   font-size: $font-size-m;
                   border-radius: $border-radius-l-right;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
                   display: flex;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
                   align-items: center;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
                   justify-content: center;
+                  -webkit-transition: width 400ms ease-in-out;
+                  -o-transition: width 400ms ease-in-out;
                   transition: width 400ms ease-in-out;
                   width: 0%;
                   height: 70px;

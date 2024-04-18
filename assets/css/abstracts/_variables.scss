@@ -39,13 +39,28 @@ $anim-delay: 500ms; // Délai initial
 $max-cards: 10;
 $anim-delay: $anim-dur / $max-cards;
 
-@keyframes slide {
+@-webkit-keyframes slide {
    from {
       opacity: 0;
+      -webkit-transform: translateX(100%);
       transform: translateX(100%);
    }
    to {
       opacity: 1;
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+   }
+}
+
+@keyframes slide {
+   from {
+      opacity: 0;
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+   }
+   to {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
       transform: translateX(0%);
    }
 }

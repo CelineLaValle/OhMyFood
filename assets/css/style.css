@@ -196,6 +196,7 @@ li {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 400ms ease-in-out;
 }
 .explorer__h1__p__button:hover {
   opacity: 0.85;
@@ -355,11 +356,11 @@ li {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 400ms ease-in-out;
 }
 .logo-heart__second:hover {
   opacity: 1;
   transform: scale(1.1);
-  transition: transform 300ms ease-in-out;
 }
 
 .info-restaurants {
@@ -453,11 +454,18 @@ li {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 400ms ease-in-out;
 }
 .titre-menu__h1__heart__second:hover {
   opacity: 1;
+  transform: scale(1.1);
 }
 
+@media (min-width: 320px) {
+  .titre-menu__h1__heart {
+    padding-left: 20px;
+  }
+}
 @media (min-width: 768px) {
   .background-menu {
     width: 555px;
@@ -479,6 +487,9 @@ li {
     justify-content: center;
     gap: 30px;
   }
+}
+.menu {
+  overflow: hidden;
 }
 .menu__h2 {
   font-size: 1rem;
@@ -604,7 +615,7 @@ li {
   background-image: linear-gradient(to right top, #ff79da, #7d33d8, #9356dc, #a477db, #99e2d0, #52dab8, #44e0b9, #44e0b9, #52dab8, #99e2d0, #a477db, #9356dc, #7d33d8, #ff79da);
   width: 100%;
   height: 100%;
-  animation: loader 3000ms linear forwards 1;
+  animation: intro 5000ms linear forwards;
   z-index: 2;
   position: fixed;
   padding: 0;
@@ -619,15 +630,17 @@ li {
 @keyframes intro {
   0% {
     opacity: 1;
-    transform: scaleY(1);
   }
-  50% {
+  80% {
     opacity: 1;
-    transform: scaleY(2);
+  }
+  90% {
+    opacity: 0;
+    visibility: hidden;
   }
   100% {
-    transform: scaleY(0);
     opacity: 0;
+    visibility: hidden;
   }
 }
 .loader {
@@ -637,15 +650,19 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: loader 3000ms linear forwards 1;
+  animation: loader-opacity 400ms linear forwards;
+  animation-delay: 4000ms;
 }
 .loader__1 {
+  animation: loader 1000ms linear infinite;
   animation-delay: 200ms;
 }
 .loader__2 {
+  animation: loader 1000ms linear infinite;
   animation-delay: 400ms;
 }
 .loader__3 {
+  animation: loader 1000ms linear infinite;
   animation-delay: 600ms;
 }
 
@@ -654,24 +671,20 @@ li {
     opacity: 1;
     transform: scaleY(1);
   }
-  20% {
-    opacity: 1;
-    transform: scaleY(1.1);
-  }
-  40% {
-    opacity: 1;
-    transform: scaleY(1.2);
-  }
-  60% {
+  50% {
     opacity: 1;
     transform: scaleY(1.3);
   }
-  80% {
+  100% {
     transform: scaleY(1);
-    opacity: 0;
+    opacity: 1;
+  }
+}
+@keyframes loader-opacity {
+  0% {
+    opacity: 1;
   }
   100% {
-    transform: scaleY(0);
     opacity: 0;
   }
 }/*# sourceMappingURL=style.css.map */

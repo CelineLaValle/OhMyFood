@@ -67,6 +67,7 @@
             font-size: $font-size-s;
             font-family: $font-secondary;
             box-shadow: $box-shadow-l;
+            transition: all 400ms ease-in-out;
 
             &:hover {
                opacity: 0.85;
@@ -257,11 +258,11 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      transition: all 400ms ease-in-out;
 
       &:hover {
          opacity: 1;
          transform: scale(1.1);
-         transition: transform 300ms ease-in-out;
       }
    }
 }

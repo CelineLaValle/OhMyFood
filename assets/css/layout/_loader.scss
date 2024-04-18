@@ -5,7 +5,7 @@
    @include loader-gradient;
    width: 100%;
    height: 100%;
-   animation: loader 3000ms linear forwards 1;
+   animation: intro 5000ms linear forwards;
    z-index: 2;
    position: fixed;
    padding: 0;
@@ -20,17 +20,20 @@
 @keyframes intro {
    0% {
       opacity: 1;
-      transform: scaleY(1);
    }
 
-   50% {
+   80% {
       opacity: 1;
-      transform: scaleY(2);
+   }
+
+   90% {
+      opacity: 0;
+      visibility: hidden;
    }
 
    100% {
-      transform: scaleY(0);
       opacity: 0;
+      visibility: hidden;
    }
 }
 
@@ -41,71 +44,48 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   animation: loader 3000ms linear forwards 1;
+   animation: loader-opacity 400ms linear forwards;
+   animation-delay: 4000ms;
 
    &__1 {
+      animation: loader 1000ms linear infinite;
       animation-delay: 200ms;
    }
 
    &__2 {
+      animation: loader 1000ms linear infinite;
       animation-delay: 400ms;
    }
 
    &__3 {
+      animation: loader 1000ms linear infinite;
       animation-delay: 600ms;
    }
 }
-
-// @keyframes loader {
-//    0% {
-//       opacity: 1;
-//       transform: scaleY(1);
-//    }
-//    20% {
-//       opacity: 1;
-//       transform: scaleY(1.2);
-//    }
-//    40% {
-//       opacity: 1;
-//       transform: scaleY(1);
-//    }
-//    60% {
-//       opacity: 1;
-//       transform: scaleY(1.2);
-//    }
-//    80% {
-//       transform: scaleY(1);
-//       opacity: 0;
-//    }
-//    100% {
-//       transform: scaleY(0);
-//       opacity: 0;
-//    }
-// // }
 
 @keyframes loader {
    0% {
       opacity: 1;
       transform: scaleY(1);
    }
-   20% {
-      opacity: 1;
-      transform: scaleY(1.1);
-   }
-   40% {
-      opacity: 1;
-      transform: scaleY(1.2);
-   }
-   60% {
+
+   50% {
       opacity: 1;
       transform: scaleY(1.3);
    }
-   80% {
-      transform: scaleY(1);
-      opacity: 0;
-   }
+
    100% {
-      transform: scaleY(0);
+      transform: scaleY(1);
+      opacity: 1;
+   }
+}
+
+@keyframes loader-opacity {
+   0% {
+      opacity: 1;
+   }
+
+   100% {
       opacity: 0;
    }
 }
