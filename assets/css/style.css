@@ -358,6 +358,8 @@ li {
 }
 .logo-heart__second:hover {
   opacity: 1;
+  transform: scale(1.1);
+  transition: transform 300ms ease-in-out;
 }
 
 .info-restaurants {
@@ -631,11 +633,20 @@ li {
 .loader {
   color: #ffffff;
   font-family: "Shrikhand", serif;
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: loader 3000ms linear forwards 1;
+}
+.loader__1 {
+  animation-delay: 200ms;
+}
+.loader__2 {
+  animation-delay: 400ms;
+}
+.loader__3 {
+  animation-delay: 600ms;
 }
 
 @keyframes loader {

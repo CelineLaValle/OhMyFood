@@ -37,11 +37,23 @@
 .loader {
    color: $color-text-white;
    font-family: $font-primary;
-   font-size: $font-size-xxxl;
+   font-size: $font-size-xxl;
    display: flex;
    align-items: center;
    justify-content: center;
    animation: loader 3000ms linear forwards 1;
+
+   &__1 {
+      animation-delay: 200ms;
+   }
+
+   &__2 {
+      animation-delay: 400ms;
+   }
+
+   &__3 {
+      animation-delay: 600ms;
+   }
 }
 
 // @keyframes loader {
@@ -69,7 +81,7 @@
 //       transform: scaleY(0);
 //       opacity: 0;
 //    }
-// }
+// // }
 
 @keyframes loader {
    0% {
