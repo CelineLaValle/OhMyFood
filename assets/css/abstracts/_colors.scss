@@ -22,10 +22,6 @@ $color-background-primary: #9356dc;
    background: linear-gradient(180deg, #9356dc 0%, #ff79da 97%);
 }
 
-// @mixin loader-gradient {
-//    background: linear-gradient(0deg, #99e2d0 0%, #ff79da 20%, #99e2d0 40%, #9356dc 60%, #99e2d0 80%, #ff79da 97%);
-// }
-
 @mixin loader-gradient {
    background-image: linear-gradient(
       to right top,

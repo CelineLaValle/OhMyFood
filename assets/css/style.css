@@ -353,8 +353,8 @@ li {
   position: absolute;
   opacity: 0;
   background: linear-gradient(180deg, #9356dc 0%, #ff79da 97%);
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 400ms ease-in-out;
 }
@@ -615,13 +615,9 @@ li {
   background-image: linear-gradient(to right top, #ff79da, #7d33d8, #9356dc, #a477db, #99e2d0, #52dab8, #44e0b9, #44e0b9, #52dab8, #99e2d0, #a477db, #9356dc, #7d33d8, #ff79da);
   width: 100%;
   height: 100%;
-  animation: intro 5000ms linear forwards;
+  animation: intro 3000ms linear forwards;
   z-index: 2;
   position: fixed;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -676,8 +672,8 @@ li {
     transform: scaleY(1.3);
   }
   100% {
-    transform: scaleY(1);
     opacity: 1;
+    transform: scaleY(1);
   }
 }
 @keyframes loader-opacity {

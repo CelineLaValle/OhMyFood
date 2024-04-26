@@ -5,13 +5,9 @@
    @include loader-gradient;
    width: 100%;
    height: 100%;
-   animation: intro 5000ms linear forwards;
+   animation: intro 3000ms linear forwards;
    z-index: 2;
    position: fixed;
-   padding: 0;
-   margin: 0;
-   top: 0;
-   left: 0;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -75,8 +71,8 @@
    }
 
    100% {
-      transform: scaleY(1);
       opacity: 1;
+      transform: scaleY(1);
    }
 }
 
