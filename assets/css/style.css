@@ -353,8 +353,8 @@ li {
   position: absolute;
   opacity: 0;
   background: linear-gradient(180deg, #9356dc 0%, #ff79da 97%);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 400ms ease-in-out;
 }
